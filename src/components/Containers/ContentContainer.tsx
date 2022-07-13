@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const StyledContentContainer = styled.div`
     height: calc(100vh - 64px);
     padding: 8px;
+    overflow: hidden auto;
 `
 
 function ContentContainer() {
