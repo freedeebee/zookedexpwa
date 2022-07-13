@@ -8,6 +8,10 @@ export const ImageWrapper = styled.div`
    position: relative;
    display: flex;
    width: 100%;
+
+   &:before {
+      background: rgba(0,255,255, 0.5);
+   }
 `
 
 export const AnimalImage = styled.img`
@@ -24,6 +28,7 @@ export const AnimalName = styled.div`
     background-color: ${({theme}) => theme.colors.secondary};
     padding: 4px 8px;
     color: ${({theme}) => theme.colors.black};
+    border-radius: 0 0 10px 0;
 `
 
 export const InformationContainer = styled.div`
@@ -33,7 +38,7 @@ export const InformationContainer = styled.div`
     background-color: ${({theme}) => theme.colors.secondary};
     color: ${({theme}) => theme.colors.black};
     height: 2em;
-    
+    border-radius: 0 0 10px 10px;
 `
 
 export const Info = styled.div`
