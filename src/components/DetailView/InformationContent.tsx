@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { AnimalInformationProps } from './types'
 
-const InformationContent = () => {
+const InformationContent = (props: AnimalInformationProps) => {
   return (
     <Scroller>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deserunt, maxime nisi aliquam quisquam magni deleniti minus officia quia veritatis, hic, obcaecati laudantium esse unde temporibus placeat perspiciatis incidunt magnam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit, sit magni esse ut corporis. Neque nostrum sint natus, minus dolore quia temporibus in corporis repudiandae doloribus, iure similique commodi.</p>
+      {props.text}
     </Scroller>
   )
 }

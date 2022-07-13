@@ -1,15 +1,15 @@
 import React from 'react'
-import DonateButton from '../../components/DetailView/DonateButton'
 import InformationContent from '../../components/DetailView/InformationContent'
 import InformationHeader from '../../components/DetailView/InformationHeader'
 import MainImageSection from '../../components/DetailView/MainImageSection'
+import { DetailPageProps } from './types'
 
-const DetailView = () => {
+const DetailView = (props: DetailPageProps) => {
   return (
     <>
-        <MainImageSection/>
-        <InformationHeader/>
-        <InformationContent/>
+        <MainImageSection imageSrc={props.imageSrc} animalId={'ididididid'} />
+        <InformationHeader animalName={props.animalName} location={props.location} date={props.date}/>
+        <InformationContent text={props.text}/>
     </>
     
   )

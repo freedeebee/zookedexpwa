@@ -2,24 +2,25 @@ import React from 'react'
 import {GoLocation} from 'react-icons/go'
 import {BiTimeFive} from 'react-icons/bi'
 import styled from 'styled-components'
+import { AnimalHeaderProps } from './types'
 
-const InformationHeader = () => {
+const InformationHeader = (props: AnimalHeaderProps) => {
   return (
     <Container>
         <Name>
-            <p>AnimalName</p>
+            <p>{props.animalName}</p>
         </Name>
         <IconData>
           <Icon>
             <GoLocation/>
           </Icon>
-          <p>Ghana, Accra</p>
+          <p>{props.location}</p>
         </IconData>
         <IconData>
           <Icon>
             <BiTimeFive/>
           </Icon>
-          <p>01.01.1970</p>
+          <p>{props.date}</p>
         </IconData>
     </Container>
   )
