@@ -1,11 +1,20 @@
 import React from 'react';
-import ListView from './components/Listview/ListView';
+import { Route, Routes } from 'react-router-dom';
+import BottomNavigation from './components/BottomNavigation/BottomNavigation';
+import ContentContainer from './components/Containers/ContentContainer';
+import DetailView from './pages/DetailView';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
     <div className="App">
-      Hello Collabothon
-      <ListView />
+      <Routes>
+        <Route path='/' element={<ContentContainer />}>
+          <Route path='detail' element={<DetailView />} />
+          <Route path='' element={<Homepage />} />
+        </Route>
+      </Routes>
+      <BottomNavigation />
     </div>
   );
 }
