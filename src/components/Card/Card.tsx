@@ -1,6 +1,7 @@
 import { CardProps } from "./types"
 import React, { useEffect } from 'react';
 import { format } from 'date-fns'
+import { AnimalCard } from './styles'
 
 export default function Card(props: CardProps) {
    useEffect(() => {  
@@ -9,7 +10,7 @@ export default function Card(props: CardProps) {
       }, []);
     
     return (
-      <div className="card">
+      <AnimalCard className="card">
          <p className="card--title">{props.name}</p>
          <img src={props.src} className="card--image" />
          <div className="card--infos">
@@ -17,6 +18,6 @@ export default function Card(props: CardProps) {
             <span>{props.location}</span>
             <span>{props.views}</span>
          </div>
-      </div>
+      </AnimalCard>
     )
 }

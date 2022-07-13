@@ -4,6 +4,7 @@ import BottomNavigation from './components/BottomNavigation/BottomNavigation';
 import ContentContainer from './components/Containers/ContentContainer';
 import DetailView from './pages/DetailView';
 import Homepage from './pages/Homepage';
+import MapPage from './pages/MapPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<ContentContainer />}>
           <Route path='detail' element={<DetailView />} />
           <Route path='' element={<Homepage />} />
+          <Route path='map' element={<MapPage />} />
         </Route>
       </Routes>
       <BottomNavigation />
