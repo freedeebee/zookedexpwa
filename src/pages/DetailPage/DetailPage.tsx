@@ -1,5 +1,4 @@
 import React from 'react'
-import DonateButton from '../../components/DetailView/DonateButton'
 import InformationContent from '../../components/DetailView/InformationContent'
 import InformationHeader from '../../components/DetailView/InformationHeader'
 import MainImageSection from '../../components/DetailView/MainImageSection'
