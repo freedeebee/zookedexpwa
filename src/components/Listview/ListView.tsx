@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import Card from '../Card/Card'
 import { AnimalCard } from './styles'
 
@@ -22,7 +23,7 @@ function ListView() {
    }, [])
 
   return (
-    <div className="App">
+    <Container>
       {cardData.map((item:AnimalCard) => (
             <AnimalCard key={item.id}>
                <Card
@@ -38,8 +39,35 @@ function ListView() {
             )
          )}
             
-    </div>
+    </Container>
   );
 }
 
 export default ListView;
+
+const Container = styled.div`
+position: absolute;
+top: -10px;
+padding: 20px 16px 20px 16px;
+height: 88vh;
+overflow-y: scroll;
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: ${({theme})=> theme.colors.secondary}; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: ${({theme})=> theme.colors.secondary} 
+}
+`
