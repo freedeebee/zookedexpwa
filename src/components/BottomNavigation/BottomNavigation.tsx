@@ -2,12 +2,15 @@ import BottomNavigationItem from "./BottomNavigationItem/BottomNavigationItem"
 import { BottomNavWrapper } from "./styles"
 import { MdPets } from 'react-icons/md'
 import { FaMapMarkedAlt, FaShoppingCart } from 'react-icons/fa'
-import { AiFillCamera, AiFillHome } from 'react-icons/ai'
+import { AiFillHome } from 'react-icons/ai'
+import CameraButton from "../CameraButton/CameraButton"
+import { Spacer } from "../Containers/Spacer"
 
 
 function BottomNavigation() {
     return (
         <BottomNavWrapper>
+            <CameraButton />
             <BottomNavigationItem 
                 label="Home"
                 icon={<AiFillHome />}
@@ -16,10 +19,7 @@ function BottomNavigation() {
                 label="Map"
                 icon={<FaMapMarkedAlt />}
                 link="/map" />
-            <BottomNavigationItem
-                label="Camera"
-                icon={<AiFillCamera/>}
-                link="/camera"/>
+            <Spacer />
             <BottomNavigationItem 
                 label="Shop"
                 icon={<FaShoppingCart />}
