@@ -1,9 +1,8 @@
-import axios from 'axios';
-import React, { FormEvent, useState } from 'react';
-import { Link } from 'react-router-dom';
+import axios from "axios";
+import { StyledCameraButton } from "./styles";
+import { BsCameraFill } from 'react-icons/bs'
 
-function CameraPage() {
-
+function CameraButton() {
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         // @ts-ignore
         const file = e.target.files[0];
@@ -25,7 +24,8 @@ function CameraPage() {
     };
         
     return (
-        <form>
+        <StyledCameraButton>
+            <BsCameraFill />
             <input
                 accept="image/*"
                 id="icon-button-file"
@@ -33,7 +33,8 @@ function CameraPage() {
                 capture="environment"
                 onChange={(e) => handleFileChange(e)}
             />
-        </form>
+        </StyledCameraButton>
     );
 }
-export default CameraPage;
+
+export default CameraButton
