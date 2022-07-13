@@ -7,7 +7,7 @@ import { DetailPageProps } from './types'
 const DetailView = (props: DetailPageProps) => {
   return (
     <>
-        <MainImageSection imageSrc={props.imageSrc} animalId={'ididididid'} />
+        <MainImageSection  imageSrc={props.imageSrc} animalId={'ididididid'}/>
         <InformationHeader animalName={props.animalName} location={props.location} date={props.date}/>
         <InformationContent text={props.text}/>
     </>

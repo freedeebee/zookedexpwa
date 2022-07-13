@@ -1,0 +1,29 @@
+{
+   "animalcards":
+   [
+      {
+      "id": 1,
+      "name": "Dog", 
+      "date": "07/13/2022",
+      "src": "https://picsum.photos/id/237/400/200",
+      "location": "Frankfurt",
+      "views": "10"
+   },
+   {
+      "id": 2,
+      "name": "Bear", 
+      "date": "07/12/2022",
+      "src": "https://picsum.photos/id/1020/400/200",
+      "location": "Mannheim",
+      "views": "3"
+   },
+   {
+      "id": 3,
+      "name": "Lion", 
+      "date": "07/11/2022",
+      "src": "https://picsum.photos/id/1074/400/200",
+      "location": "Berlin",
+      "views": "150"
+   }
+   ]
+}

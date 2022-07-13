@@ -1,70 +1,43 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card'
 import { AnimalCard } from './styles'
 
+type AnimalCard = {
+   id: number;
+   name: string;
+   src: string; 
+   date: Date;
+   location: string;
+   views: number;
+}
+
 function ListView() {
-   const dogcard = {
-      id: 1,
-      name: 'Dog', 
-      date: new Date("07/13/2022"),
-      src: 'https://picsum.photos/id/237/400/200',
-      location: 'Frankfurt',
-      views: 10
-   };
-   
-   const bearcard = {
-      id: 2,
-      name: 'Bear', 
-      date: new Date("07/12/2022"),
-      src: 'https://picsum.photos/id/1020/400/200',
-      location: 'Mannheim',
-      views: 3
-   };
+   const [cardData, setCardData] = useState([])
 
-   const lioncard = {
-      id: 3,
-      name: 'Lion', 
-      date: new Date("07/11/2022"),
-      src: 'https://picsum.photos/id/1074/400/200',
-      location: 'Berlin',
-      views: 100
-   };
-
+   useEffect(()=>{
+      axios.get('/animaldetails.json')
+      .then(res => setCardData(res.data.animalcards))
+      .catch(err => console.error(err))
+   }, [])
 
   return (
     <div className="App">
-            <AnimalCard>
+      {cardData.map((item:AnimalCard) => (
+            <AnimalCard key={item.id}>
                <Card
-                key={'test-1'}
-                id={dogcard.id}
-                name= {dogcard.name}
-                date = {dogcard.date}
-                src = {dogcard.src}
-                location = {dogcard.location}
-                views = {dogcard.views}
+                id={item.id}
+                name= {item.name}
+                date = {new Date(item.date)}
+                src = {item.src}
+                location = {item.location}
+                views = {item.views}
 
             />
             </AnimalCard>
-            <AnimalCard>
-               <Card
-                key={'test-2'}
-                id={lioncard.id}
-                name= {lioncard.name}
-                date = {lioncard.date}
-                src = {lioncard.src}
-                location = {lioncard.location}
-                views = {lioncard.views}
-            />
-            </AnimalCard>
-            <Card
-                key={'test-3'}
-                id={bearcard.id}
-                name= {bearcard.name}
-                date = {bearcard.date}
-                src = {bearcard.src}
-                location = {bearcard.location}
-                views = {bearcard.views}
-            />
+            )
+         )}
+            
     </div>
   );
 }
