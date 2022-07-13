@@ -1,23 +1,31 @@
 import { CardProps } from "./types"
 import React, { useEffect } from 'react';
 import { format } from 'date-fns'
-import { AnimalCard } from './styles'
+import { AnimalCard,ImageWrapper, InformationContainer, AnimalName, AnimalImage, Info, TextWrapper} from './styles'
+import {BiTimeFive} from 'react-icons/bi'
+import {GoLocation} from 'react-icons/go'
+import {AiOutlineEye} from 'react-icons/ai'
+import { useNavigate } from "react-router-dom";
 
 export default function Card(props: CardProps) {
+   let navigate = useNavigate();
+   
    useEffect(() => {  
         
         console.log(props)      
       }, []);
     
     return (
-      <AnimalCard className="card">
-         <p className="card--title">{props.name}</p>
-         <img src={props.src} className="card--image" />
-         <div className="card--infos">
-            <span>{format(props.date, 'dd.MM.yyyy').toString()}</span>
-            <span>{props.location}</span>
-            <span>{props.views}</span>
-         </div>
+      <AnimalCard onClick={() => navigate('/detail')} className="card">
+         <ImageWrapper>
+            <AnimalName className="card--title">{props.name}</AnimalName>
+            <AnimalImage src={props.src} className="card--image"></AnimalImage>
+         </ImageWrapper>
+         <InformationContainer className="card--infos">
+            <Info><BiTimeFive /><TextWrapper>{format(props.date, 'dd.MM.yyyy').toString()}</TextWrapper></Info>
+            <Info><GoLocation /><TextWrapper>{props.location}</TextWrapper></Info>
+            <Info><AiOutlineEye /><TextWrapper>{props.views}</TextWrapper></Info>
+         </InformationContainer>
       </AnimalCard>
     )
 }
