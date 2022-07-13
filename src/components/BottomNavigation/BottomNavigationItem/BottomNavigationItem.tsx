@@ -1,11 +1,11 @@
-import { NavButton } from "./styles"
+import { NavButton, NavItemLabel } from "./styles"
 import { BottomNavigationItemProps } from "./types"
 
 function BottomNavigationItem(props: BottomNavigationItemProps) {
     return (
         <NavButton>
             <div>{props.icon}</div>
-            <div>{props.label}</div>
+            <NavItemLabel>{props.label}</NavItemLabel>
         </NavButton>
     )
 }

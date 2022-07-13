@@ -1,10 +1,12 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import BottomNavigation from './components/BottomNavigation/BottomNavigation';
 
 function App() {
   return (
     <div className="App">
-      Hello Collabothon
+      <Routes>
+      </Routes>
       <BottomNavigation />
     </div>
   );
