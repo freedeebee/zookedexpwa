@@ -7,7 +7,8 @@
       "date": "07/13/2022",
       "src": "https://picsum.photos/id/237/400/200",
       "location": "Frankfurt",
-      "views": "10"
+      "views": "10",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
    },
    {
       "id": 2,
@@ -15,7 +16,8 @@
       "date": "07/12/2022",
       "src": "https://picsum.photos/id/1020/400/200",
       "location": "Mannheim",
-      "views": "3"
+      "views": "3",
+      "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
    },
    {
       "id": 3,
@@ -23,7 +25,8 @@
       "date": "07/11/2022",
       "src": "https://picsum.photos/id/1074/400/200",
       "location": "Berlin",
-      "views": "150"
+      "views": "150",
+      "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
    }
    ]
 }

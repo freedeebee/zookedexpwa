@@ -18,6 +18,7 @@ export const AnimalImage = styled.img`
     object-fit: cover;
     width: 100%;
     height: 250px;
+    border-radius: 10px 10px 0 0;
 `
 
 
@@ -28,7 +29,7 @@ export const AnimalName = styled.div`
     background-color: ${({theme}) => theme.colors.secondary};
     padding: 4px 8px;
     color: ${({theme}) => theme.colors.black};
-    border-radius: 0 0 10px 0;
+    border-radius: 10px 0 10px 0;
 `
 
 export const InformationContainer = styled.div`

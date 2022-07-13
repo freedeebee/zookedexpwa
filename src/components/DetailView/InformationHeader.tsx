@@ -3,6 +3,7 @@ import {GoLocation} from 'react-icons/go'
 import {BiTimeFive} from 'react-icons/bi'
 import styled from 'styled-components'
 import { AnimalHeaderProps } from './types'
+import { format } from 'date-fns'
 
 const InformationHeader = (props: AnimalHeaderProps) => {
   return (
@@ -20,7 +21,9 @@ const InformationHeader = (props: AnimalHeaderProps) => {
           <Icon>
             <BiTimeFive/>
           </Icon>
-          <p>{props.date}</p>
+        
+          <p>Date TODO</p>
+          
         </IconData>
     </Container>
   )

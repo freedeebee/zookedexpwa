@@ -8,7 +8,7 @@ import { ImageBannerProps } from './types'
 const MainImageSection = (props: ImageBannerProps) => {
   return (
     <>
-      <AnimalImage src={katze} alt="animal"/>
+      <AnimalImage src={props.imageSrc} alt="animal"/>
       <BackButton/>
       <DonateButton/>
     </>

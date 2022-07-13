@@ -10,26 +10,13 @@ import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Routes>
-        <Route path="/" element={<ContentContainer />}>
-          <Route
-            path="detail"
-            element={
-              <DetailPage
-                imageSrc={
-                  "../../assets/images/photo-1614027164847-1b28cfe1df60.jpg"
-                }
-                animalName={"Katze"}
-                location={"Ghana, Accra"}
-                date={"01.01.1970"}
-                text={Lorem}
-              />
-            }
-          />
-          <Route path="" element={<Homepage />} />
-          <Route path="map" element={<MapPage />} />
-          <Route path="profile" element={<Profile />} />
+        <Route path='/' element={<ContentContainer />}>
+          <Route path='detail/:id' element={<DetailPage />} />
+          <Route path='' element={<Homepage />} />
+          <Route path='map' element={<MapPage />} />
+          <Route path='profile' element={<Profile />} />
         </Route>
       </Routes>
       <BottomNavigation />
