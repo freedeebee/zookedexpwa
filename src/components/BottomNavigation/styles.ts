@@ -8,4 +8,6 @@ export const BottomNavWrapper = styled.nav`
     background: ${({theme}) => theme.colors.darkGrey};
     color: white;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
 `

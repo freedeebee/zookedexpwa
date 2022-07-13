@@ -1,6 +1,8 @@
 import BottomNavigationItem from "./BottomNavigationItem/BottomNavigationItem"
 import { BottomNavWrapper } from "./styles"
-import {MdPets} from 'react-icons/md'
+import { MdPets } from 'react-icons/md'
+import { FaMapMarkedAlt, FaShoppingCart } from 'react-icons/fa'
+import { AiFillHome } from 'react-icons/ai'
 
 
 function BottomNavigation() {
@@ -8,15 +10,15 @@ function BottomNavigation() {
         <BottomNavWrapper>
             <BottomNavigationItem 
                 label="Home"
-                icon={<MdPets />}
+                icon={<AiFillHome />}
                 link="/" />
             <BottomNavigationItem 
                 label="Map"
-                icon={<MdPets />}
+                icon={<FaMapMarkedAlt />}
                 link="/" />
             <BottomNavigationItem 
                 label="Shop"
-                icon={<MdPets />}
+                icon={<FaShoppingCart />}
                 link="/" />
             <BottomNavigationItem 
                 label="Profile"
