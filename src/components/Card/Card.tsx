@@ -5,15 +5,18 @@ import { AnimalCard,ImageWrapper, InformationContainer, AnimalName, AnimalImage,
 import {BiTimeFive} from 'react-icons/bi'
 import {GoLocation} from 'react-icons/go'
 import {AiOutlineEye} from 'react-icons/ai'
+import { useNavigate } from "react-router-dom";
 
 export default function Card(props: CardProps) {
+   let navigate = useNavigate();
+   
    useEffect(() => {  
         
         console.log(props)      
       }, []);
     
     return (
-      <AnimalCard className="card">
+      <AnimalCard onClick={() => navigate('/detail')} className="card">
          <ImageWrapper>
             <AnimalName className="card--title">{props.name}</AnimalName>
             <AnimalImage src={props.src} className="card--image"></AnimalImage>
