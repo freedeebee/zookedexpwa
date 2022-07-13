@@ -6,6 +6,10 @@ import { AnimalHeaderProps } from './types'
 import { format } from 'date-fns'
 
 const InformationHeader = (props: AnimalHeaderProps) => {
+
+  console.log(props.date)
+  console.log(props.location)
+
   return (
     <Container>
         <Name>
@@ -21,8 +25,8 @@ const InformationHeader = (props: AnimalHeaderProps) => {
           <Icon>
             <BiTimeFive/>
           </Icon>
-        
-          <p>Date TODO</p>
+        <p>{props.date}</p>
+          
           
         </IconData>
     </Container>

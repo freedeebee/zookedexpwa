@@ -10,7 +10,7 @@ type AnimalCardDetails = {
   id: number;
   name: string;
   src: string; 
-  date: Date;
+  date: string;
   location: string;
   views: number;
   text: string;
@@ -24,15 +24,18 @@ const DetailView = () => {
   useEffect(() => {
     if (id)
       axios.get("/animalDetails.json").then(res => setDetails(res.data.animalcards[+id-1]))
-  })
+  },[])
 
   return (
     <>
-        <MainImageSection imageSrc={details?.src} animalId={details?.id}/>
-        <InformationHeader animalName={details?.name} location={details?.location} date={details?.date}/>
-        <InformationContent text={details?.text}/>
+      {details?.date&& 
+        <>
+          <MainImageSection imageSrc={details?.src} animalId={details?.id}/>
+          <InformationHeader animalName={details?.name} location={details?.location} date={details?.date}/>
+          <InformationContent text={details?.text}/>
+        </>
+      } 
     </>
-    
   )
 }
 
