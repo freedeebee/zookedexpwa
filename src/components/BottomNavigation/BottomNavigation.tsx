@@ -2,7 +2,7 @@ import BottomNavigationItem from "./BottomNavigationItem/BottomNavigationItem"
 import { BottomNavWrapper } from "./styles"
 import { MdPets } from 'react-icons/md'
 import { FaMapMarkedAlt, FaShoppingCart } from 'react-icons/fa'
-import { AiFillHome } from 'react-icons/ai'
+import { AiFillCamera, AiFillHome } from 'react-icons/ai'
 
 
 function BottomNavigation() {
@@ -16,6 +16,10 @@ function BottomNavigation() {
                 label="Map"
                 icon={<FaMapMarkedAlt />}
                 link="/map" />
+            <BottomNavigationItem
+                label="Camera"
+                icon={<AiFillCamera/>}
+                link="/camera"/>
             <BottomNavigationItem 
                 label="Shop"
                 icon={<FaShoppingCart />}
