@@ -2,15 +2,14 @@ import React from 'react'
 import DonateButton from '../../components/DetailView/DonateButton'
 import InformationContent from '../../components/DetailView/InformationContent'
 import InformationHeader from '../../components/DetailView/InformationHeader'
-import MainImage from '../../components/DetailView/MainImage'
+import MainImageSection from '../../components/DetailView/MainImageSection'
 
 const DetailView = () => {
   return (
     <>
-        <MainImage/>
+        <MainImageSection/>
         <InformationHeader/>
         <InformationContent/>
-        
     </>
     
   )
