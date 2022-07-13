@@ -16,7 +16,7 @@ function ListView() {
    const [cardData, setCardData] = useState([])
 
    useEffect(()=>{
-      axios.get('/animaldetails.json')
+      axios.get('/animalCards.json')
       .then(res => setCardData(res.data.animalcards))
       .catch(err => console.error(err))
    }, [])

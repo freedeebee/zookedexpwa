@@ -20,7 +20,7 @@ const InformationHeader = (props: AnimalHeaderProps) => {
           <Icon>
             <BiTimeFive/>
           </Icon>
-          <p>{props.date}</p>
+          <p>{}</p>
         </IconData>
     </Container>
   )

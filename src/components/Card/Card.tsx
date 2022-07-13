@@ -12,7 +12,7 @@ export default function Card(props: CardProps) {
    
     
     return (
-      <AnimalCard onClick={() => navigate('/detail')} className="card">
+      <AnimalCard onClick={() => navigate('/detail/'+props.id)} className="card">
          <ImageWrapper>
             <AnimalName className="card--title">{props.name}</AnimalName>
             <AnimalImage src={props.src} className="card--image"></AnimalImage>
