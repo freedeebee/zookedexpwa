@@ -8,5 +8,5 @@ export const AnimalImage = styled.img`
 
 export const InformationSectionContainer = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 `

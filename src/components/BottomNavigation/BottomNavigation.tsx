@@ -1,6 +1,6 @@
 import BottomNavigationItem from "./BottomNavigationItem/BottomNavigationItem"
 import { BottomNavWrapper } from "./styles"
-import { MdPets } from 'react-icons/md'
+import {MdPets} from 'react-icons/md'
 
 
 function BottomNavigation() {
