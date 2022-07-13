@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function CameraPage() {
 
   return (
     <div>
-          <h5>Capture your image</h5>
           <input
             accept="image/*"
             id="icon-button-file"
@@ -12,6 +12,7 @@ function CameraPage() {
             capture="environment"
             onChange={(e) => console.log(e.target)}
           />
+          
     </div>
   );
 }
