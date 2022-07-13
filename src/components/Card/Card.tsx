@@ -1,5 +1,5 @@
 import { CardProps } from "./types"
-import React, { useEffect } from 'react';
+import React from 'react';
 import { format } from 'date-fns'
 import { AnimalCard,ImageWrapper, InformationContainer, AnimalName, AnimalImage, Info, TextWrapper} from './styles'
 import {BiTimeFive} from 'react-icons/bi'
@@ -10,10 +10,6 @@ import { useNavigate } from "react-router-dom";
 export default function Card(props: CardProps) {
    let navigate = useNavigate();
    
-   useEffect(() => {  
-        
-        console.log(props)      
-      }, []);
     
     return (
       <AnimalCard onClick={() => navigate('/detail')} className="card">
