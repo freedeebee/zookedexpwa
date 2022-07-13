@@ -15,15 +15,15 @@ function BottomNavigation() {
             <BottomNavigationItem 
                 label="Map"
                 icon={<FaMapMarkedAlt />}
-                link="/" />
+                link="/map" />
             <BottomNavigationItem 
                 label="Shop"
                 icon={<FaShoppingCart />}
-                link="/" />
+                link="/shop" />
             <BottomNavigationItem 
                 label="Profile"
                 icon={<MdPets />}
-                link="/" />
+                link="/profile" />
         </BottomNavWrapper>
     )
 }
