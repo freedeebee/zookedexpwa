@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import ShopCard from "../../components/ShopCard/ShopCard";
-import ShopList from "../../components/ShopCard/ShopList";
 import { ShopCardProps } from "../../components/ShopCard/types";
 
 const ShopPage = () => {
