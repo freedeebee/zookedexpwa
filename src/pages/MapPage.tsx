@@ -13,8 +13,8 @@ function MapPage() {
 
     useEffect(() => {
         axios.get("/collection").then((res) => {
-            setAnimalName(res.data["1"].name);
-            setMarkerPosition([res.data[1].gallery[0].latitude, res.data[1].gallery[0].longitude]);
+            setAnimalName(res.data["2"].name);
+            setMarkerPosition([res.data["2"].gallery[0].latitude, res.data["2"].gallery[0].longitude]);
         }).catch(err => {
             console.log(err);
         })
@@ -53,7 +53,7 @@ function MapPage() {
             </Marker>
             <Marker position={[51.769189, 19.408933]}>
                 <Popup>           
-                    Elephant
+                    Monkey
                 </Popup>
             </Marker>
 

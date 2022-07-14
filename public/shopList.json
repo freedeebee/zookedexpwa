@@ -3,66 +3,59 @@
     [
        {
        "id": 1,
-       "name": "Food", 
-       "price": "07/13/2022",
-       "imageSrc": "https://picsum.photos/id/237/400/200",
-       "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+       "name": "Food10", 
+       "price": "500",
+       "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
+       "previewText": "Food 10€ Voucher in Orientarium ZOO Łódź"
     },
     {
         "id": 2,
-        "name": "Food", 
-        "price": "07/13/2022",
-        "imageSrc": "https://picsum.photos/id/237/400/200",
-        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+        "name": "Food50", 
+        "price": "1500",
+        "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
+        "previewText": "Food 50€ Voucher in Orientarium ZOO Łódź"
      },
      {
         "id": 3,
-        "name": "Food", 
-        "price": "07/13/2022",
-        "imageSrc": "https://picsum.photos/id/237/400/200",
-        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+        "name": "Drinks10", 
+        "price": "750",
+        "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
+        "previewText": "Drinks 10€ Voucher in Orientarium ZOO Łódź"
      },
      {
-        "id": 11,
-        "name": "Food", 
-        "price": "07/13/2022",
-        "imageSrc": "https://picsum.photos/id/237/400/200",
-        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+        "id": 4,
+        "name": "Drinks50", 
+        "price": "1000",
+        "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
+        "previewText": "Drinks 50€ Voucher in Orientarium ZOO Łódź"
      },
      {
-         "id": 21,
-         "name": "Food", 
-         "price": "07/13/2022",
-         "imageSrc": "https://picsum.photos/id/237/400/200",
-         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+         "id": 5,
+         "name": "WWF50", 
+         "price": "2000",
+         "imageSrc": "https://upload.wikimedia.org/wikipedia/de/thumb/0/06/WWF_Logo.svg/84px-WWF_Logo.svg.png",
+         "previewText": "50€ WMF Membership for a year"
       },
       {
-         "id": 31,
-         "name": "Food", 
-         "price": "07/13/2022",
-         "imageSrc": "https://picsum.photos/id/232/400/200",
-         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+         "id": 6,
+         "name": "WWF100", 
+         "price": "3500",
+         "imageSrc": "https://upload.wikimedia.org/wikipedia/de/thumb/0/06/WWF_Logo.svg/84px-WWF_Logo.svg.png",
+         "previewText": "100€ WMF Membership for a year"
       },
       {
-        "id": 12,
-        "name": "Food", 
-        "price": "07/13/2022",
-        "imageSrc": "https://picsum.photos/id/237/400/200",
-        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+        "id": 7,
+        "name": "AnimalDefenders50", 
+        "price": "4000",
+        "imageSrc": "https://defenders.org/themes/custom/particle/dist/assets/logo.png",
+        "previewText": "50€ Donation to Animal Defenders"
      },
      {
-         "id": 22,
-         "name": "Food", 
-         "price": "07/13/2022",
-         "imageSrc": "https://picsum.photos/id/237/400/200",
-         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
-      },
-      {
-         "id": 32,
-         "name": "Food", 
-         "price": "07/13/2022",
-         "imageSrc": "https://picsum.photos/id/237/400/200",
-         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+         "id": 8,
+         "name": "AnimalDefenders100", 
+         "price": "4500",
+         "imageSrc": "https://defenders.org/themes/custom/particle/dist/assets/logo.png",
+         "previewText": "100€ Donation to Animal Defenders"
       }
     ]
  }
