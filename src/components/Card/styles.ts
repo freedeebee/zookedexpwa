@@ -8,8 +8,6 @@ export const ImageWrapper = styled.div`
   position: relative;
   display: flex;
   width: 100%;
-  height: 150px;
-  overflow: hidden;
 
   &:before {
     background: rgba(0, 255, 255, 0.5);
