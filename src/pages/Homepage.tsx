@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "../components/Card/Card";
-import { AnimalCard } from "../components/Card/styles";
+import icon from "../assets/images/512Zookedex.png";
 
 type AnimalCardProps = {
   id: number;
@@ -25,7 +25,11 @@ function Homepage() {
 
   return (
     <Container>
-      <h1>Zookedex</h1>
+      <IMG src={icon} />
+      <Header>
+        <h1>Zookedex</h1>
+      </Header>
+      <h3>Your recent findings</h3>
       {cardData.map((item: AnimalCardProps) => (
         <Card
           key={item.id}
@@ -43,6 +47,14 @@ function Homepage() {
 
 export default Homepage;
 
+const Header = styled.div`
+  display: flex;
+`;
+
+const IMG = styled.img`
+  width: 100px;
+`;
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,6 +65,7 @@ const Container = styled.div`
   height: 88vh;
   width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
   ::-webkit-scrollbar {
     width: 8px;
   }
