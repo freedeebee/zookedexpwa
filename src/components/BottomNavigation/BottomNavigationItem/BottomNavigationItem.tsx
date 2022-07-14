@@ -2,9 +2,6 @@ import { NavLink } from "react-router-dom";
 import { NavButton, NavItemLabel } from "./styles";
 import { BottomNavigationItemProps } from "./types";
 import { useEffect, useState } from "react";
-import { MdPets } from "react-icons/md";
-import { FaMapMarkedAlt, FaShoppingCart } from "react-icons/fa";
-import { AiFillHome } from "react-icons/ai";
 import styled from "styled-components";
 
 function BottomNavigationItem(props: BottomNavigationItemProps) {
@@ -13,6 +10,10 @@ function BottomNavigationItem(props: BottomNavigationItemProps) {
   const handleActiveChange = (value: boolean) => {
     setActive(value);
   };
+
+  useEffect(() => {
+    setActive(false);
+  }, []);
 
   return (
     <NavLink
