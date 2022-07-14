@@ -76,8 +76,9 @@ const Input = styled.input`
   border-bottom: 4px solid ${({ theme }) => theme.colors.black};
   margin-bottom: 40px;
   margin-top: 10px;
-  width: 80%;
-  font-size: 1rem;
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: center;
   &:focus {
     outline: none;
     border-bottom: 4px solid ${({ theme }) => theme.colors.secondary};
@@ -133,6 +134,7 @@ const AmountButton = styled.button`
   margin-right: 15px;
   border: none;
   opacity: 0.7;
+  font-size: 1rem;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   background: ${({ theme }) => theme.colors.secondary};
 

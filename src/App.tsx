@@ -16,13 +16,13 @@ function App() {
       <Routes>
         <Route path='/' element={<ContentContainer />}>
           <Route path='detail/:id' element={<DetailPage />} />
-          <Route path='donation' element={<DonationPage />} />
           <Route path='' element={<Homepage />} />
           <Route path='map' element={<MapPage />} />
           <Route path='profile' element={<Profile />} />
           <Route path='shop' element={<ShopPage />} />
         </Route>
         <Route path='login' element={<LoginPage />} />
+        <Route path='donation/:id' element={<DonationPage />} />
         <Route path='register' element={<RegisterPage />} />
       </Routes>
     </div>
