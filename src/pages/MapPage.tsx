@@ -15,13 +15,7 @@ function MapPage() {
     ];
     
     function getLocation() {
-        console.log("test");
-        navigator.geolocation.getCurrentPosition(position => {
-            console.log("test2");
-            console.log("Latitude is :", position.coords.latitude);
-            console.log("Longitude is :", position.coords.longitude);
-        });
-        console.log("test3");
+        
     }
     
 
@@ -51,7 +45,7 @@ function MapPage() {
 
             {markerPosition.map(p => {
                 return(
-                    <Marker position={p} />
+                    <Marker key={p[1]} position={p} />
                 )
             })}
 
