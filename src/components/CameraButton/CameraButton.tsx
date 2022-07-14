@@ -12,7 +12,6 @@ function CameraButton() {
         navigator.geolocation.getCurrentPosition(position => {
             setLatitude(String(position.coords.latitude));
             setLongitude(String(position.coords.longitude));
-            console.log("func1")
         });
     }, [])
     
@@ -23,8 +22,6 @@ function CameraButton() {
         formData.append('image', file);
         formData.append("latitude", latitude);
         formData.append("longitude", longitude);
-
-        console.log("func2")
 
         axios
             .post("/upload", formData, {
