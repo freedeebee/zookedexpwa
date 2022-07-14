@@ -8,10 +8,7 @@ function MapPage() {
     const mapPosition: [number, number] = [50.110924, 8.682127];
     const zoom = 10
     const markerPosition: [number, number][] = [
-        [50.120924, 8.682127],
-        [50.110924, 8.692127],
-        [50.110924, 8.702127],
-        [50.110924, 8.712127],
+        [50.1158148, 8.6348734]
     ];
 
     useEffect(() => {
@@ -37,15 +34,13 @@ function MapPage() {
 
             {markerPosition.map(p => {
                 return(
-                    <Marker key={p[1]} position={p} />
+                    <Marker key={p[1]} position={p}>
+                        <Popup>
+                            Lion
+                        </Popup>
+                    </Marker>
                 )
             })}
-
-            <Marker position={mapPosition}>
-                <Popup>
-                    Tier
-                </Popup>
-            </Marker>
         </MapContainer>
     )
 }
