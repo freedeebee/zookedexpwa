@@ -5,7 +5,6 @@ import { FaMapMarkedAlt, FaShoppingCart } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
 import CameraButton from "../CameraButton/CameraButton";
 import { Spacer } from "../Containers/Spacer";
-import { useEffect, useState } from "react";
 
 function BottomNavigation() {
   return (
