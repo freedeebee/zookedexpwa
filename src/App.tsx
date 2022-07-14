@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage";
 import MapPage from "./pages/MapPage";
 import Profile from "./components/Profile/Profile";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import ShopPage from "./pages/ShopPage/ShopPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="" element={<Homepage />} />
           <Route path="map" element={<MapPage />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="shop" element={<ShopPage />} />
         </Route>
         <Route path="login" element={<LoginPage />} />
       </Routes>
