@@ -2,63 +2,35 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { GiPiggyBank } from "react-icons/gi";
-import { BiDonateHeart } from "react-icons/bi";
+import { BiDonateHeart, BiEuro } from "react-icons/bi";
 
 const DonationForm = () => {
   const [donation, setDonation] = useState("");
-
   const navigate = useNavigate();
-
-  const handleDonationChange = (value: string) => {
-    setDonation(value);
-  };
-
-  const [select, setSelect] = useState("betterPriceOnly");
-  const handleSelectChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    setSelect(value);
-  };
 
   return (
     <GreenBlock>
       <Container>
-        <Label>
-          <NewIcon />
-          Donate now
-        </Label>
+        <Label>Donate now:</Label>
       </Container>
+      <ButtonContainer>
+        <AmountButton onClick={() => setDonation("10")}>10 €</AmountButton>
+        <AmountButton onClick={() => setDonation("25")}>25 €</AmountButton>
+        <AmountButton onClick={() => setDonation("50")}>50 €</AmountButton>
+        <AmountButton onClick={() => setDonation("100")}>100 €</AmountButton>
+        <AmountButton onClick={() => setDonation("500")}>500 €</AmountButton>
+        <AmountButton onClick={() => setDonation("1000")}>1000 €</AmountButton>
+      </ButtonContainer>
       <Form>
-        <ButtonContainer>
-          <AmountButton type='submit' onClick={() => navigate("/")}>
-            10€{" "}
-          </AmountButton>
-          <AmountButton type='submit' onClick={() => navigate("/")}>
-            25€{" "}
-          </AmountButton>
-          <AmountButton type='submit' onClick={() => navigate("/")}>
-            50€{" "}
-          </AmountButton>
-          <AmountButton type='submit' onClick={() => navigate("/")}>
-            100€{" "}
-          </AmountButton>
-          <AmountButton type='submit' onClick={() => navigate("/")}>
-            500€{" "}
-          </AmountButton>
-          <AmountButton type='submit' onClick={() => navigate("/")}>
-            1000€{" "}
-          </AmountButton>
-        </ButtonContainer>
-
-        <DifferentLabel>Other Amount:</DifferentLabel>
+        <DifferentLabel>Amount:</DifferentLabel>
         <Input
-          type='number'
           required
           value={donation}
-          onChange={(event) => handleDonationChange(event.target.value)}
+          onChange={(event) => setDonation(event.target.value)}
           min='1'
           step='any'
         />
-        <DonationButton onClick={() => console.log("Donated")} />
+        <DonationButton onClick={() => alert("Thanks for donating")} />
       </Form>
     </GreenBlock>
   );
@@ -81,6 +53,7 @@ const GreenBlock = styled.div`
 const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const NewIcon = styled(GiPiggyBank)`
@@ -93,7 +66,7 @@ const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10vw;
+  padding: 8vw;
   width: 100%;
 `;
 
@@ -103,7 +76,9 @@ const Input = styled.input`
   border-bottom: 4px solid ${({ theme }) => theme.colors.black};
   margin-bottom: 40px;
   margin-top: 10px;
-  width: 80%;
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: center;
   &:focus {
     outline: none;
     border-bottom: 4px solid ${({ theme }) => theme.colors.secondary};
@@ -137,8 +112,8 @@ const Label = styled.label`
 `;
 
 const DifferentLabel = styled.label`
-  margin-top: 15px;
-  font-size: 1rem;
+  margin-top: 10px;
+  font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.black};
 `;
 
@@ -159,6 +134,7 @@ const AmountButton = styled.button`
   margin-right: 15px;
   border: none;
   opacity: 0.7;
+  font-size: 1rem;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   background: ${({ theme }) => theme.colors.secondary};
 
@@ -169,6 +145,7 @@ const AmountButton = styled.button`
 
 const ButtonContainer = styled.div`
   display: flexbox;
+  margin-top: 30px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

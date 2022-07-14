@@ -19,12 +19,11 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px;
 `;
 
 const Image = styled.img`
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   display: block;
   object-fit: cover;
 `;

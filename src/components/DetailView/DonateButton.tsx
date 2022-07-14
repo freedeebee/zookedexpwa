@@ -1,11 +1,12 @@
 import { BiDonateHeart } from "react-icons/bi";
 import styled from "styled-components";
+import { useNavigate, useParams } from "react-router-dom";
 
 const DonateButton = () => {
-  const handleClick = () => {
-    console.log("Donated");
-  };
-  return <Button onClick={() => handleClick()} />;
+  let navigate = useNavigate();
+  const { id } = useParams();
+
+  return <Button onClick={() => navigate("/donation/" + id)} />;
 };
 
 export default DonateButton;
