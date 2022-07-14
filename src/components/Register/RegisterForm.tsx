@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-const LoginForm = () => {
+const RegisterForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [checkPassword, setCheckPassword] = useState("");
 
   const navigate = useNavigate();
 
@@ -14,6 +15,9 @@ const LoginForm = () => {
 
   const handlePasswordChange = (value: string) => {
     setPassword(value);
+  };
+  const handlePasswordCheck = (value: string) => {
+    setCheckPassword(value);
   };
 
   return (
@@ -37,15 +41,23 @@ const LoginForm = () => {
           value={password}
           onChange={(event) => handlePasswordChange(event.target.value)}
         />
+        <Input
+          type="password"
+          placeholder="Enter same Password again"
+          name="password"
+          required
+          value={checkPassword}
+          onChange={(event) => handlePasswordCheck(event.target.value)}
+        />
       </Form>
       <Button type="submit" onClick={() => navigate("/")}>
-        Sign in
+        Register
       </Button>
     </GreenBlock>
   );
 };
 
-export default LoginForm;
+export default RegisterForm;
 
 const GreenBlock = styled.div`
   display: flex;
