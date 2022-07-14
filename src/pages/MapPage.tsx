@@ -13,11 +13,6 @@ function MapPage() {
         [50.110924, 8.702127],
         [50.110924, 8.712127],
     ];
-    
-    function getLocation() {
-        
-    }
-    
 
     useEffect(() => {
         const L = require("leaflet");
@@ -34,9 +29,6 @@ function MapPage() {
     
 
     return (
-        <>
-        <button onClick={getLocation}>Get Location</button>
-
         <MapContainer center={mapPosition} zoom={zoom} scrollWheelZoom={false} style={{ height:`calc(100vh - 100px)`}}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -55,7 +47,6 @@ function MapPage() {
                 </Popup>
             </Marker>
         </MapContainer>
-        </>
     )
 }
 
