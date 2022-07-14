@@ -1,17 +1,17 @@
 import axios from "axios";
 import { StyledCameraButton } from "./styles";
 import { BsCameraFill } from 'react-icons/bs'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function CameraButton() {
 
-    let latitude = "";
-    let longitude = "";
+    const [latitude, setLatitude] = useState("");
+    const [longitude, setLongitude] = useState("");
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(position => {
-            latitude = String(position.coords.latitude)
-            longitude = String(position.coords.longitude)
+            setLatitude(String(position.coords.latitude));
+            setLongitude(String(position.coords.longitude));
         });
     }, [])
     
