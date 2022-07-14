@@ -1,9 +1,11 @@
-import React from "react";
 import { BiDonateHeart } from "react-icons/bi";
 import styled from "styled-components";
 
 const DonateButton = () => {
-  return <Button onClick={() => console.log("Donated")} />;
+  const handleClick = () => {
+    console.log("Donated");
+  };
+  return <Button onClick={() => handleClick()} />;
 };
 
 export default DonateButton;

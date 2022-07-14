@@ -1,0 +1,68 @@
+{
+    "shopItems":
+    [
+       {
+       "id": 1,
+       "name": "Food", 
+       "price": "07/13/2022",
+       "imageSrc": "https://picsum.photos/id/237/400/200",
+       "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+    },
+    {
+        "id": 2,
+        "name": "Food", 
+        "price": "07/13/2022",
+        "imageSrc": "https://picsum.photos/id/237/400/200",
+        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+     },
+     {
+        "id": 3,
+        "name": "Food", 
+        "price": "07/13/2022",
+        "imageSrc": "https://picsum.photos/id/237/400/200",
+        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+     },
+     {
+        "id": 11,
+        "name": "Food", 
+        "price": "07/13/2022",
+        "imageSrc": "https://picsum.photos/id/237/400/200",
+        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+     },
+     {
+         "id": 21,
+         "name": "Food", 
+         "price": "07/13/2022",
+         "imageSrc": "https://picsum.photos/id/237/400/200",
+         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+      },
+      {
+         "id": 31,
+         "name": "Food", 
+         "price": "07/13/2022",
+         "imageSrc": "https://picsum.photos/id/232/400/200",
+         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+      },
+      {
+        "id": 12,
+        "name": "Food", 
+        "price": "07/13/2022",
+        "imageSrc": "https://picsum.photos/id/237/400/200",
+        "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+     },
+     {
+         "id": 22,
+         "name": "Food", 
+         "price": "07/13/2022",
+         "imageSrc": "https://picsum.photos/id/237/400/200",
+         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+      },
+      {
+         "id": 32,
+         "name": "Food", 
+         "price": "07/13/2022",
+         "imageSrc": "https://picsum.photos/id/237/400/200",
+         "previewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur iure numquam, neque sit porro enim, doloribus nulla nemo soluta magnam, at laudantium delectus quod tempora alias a possimus! Libero."
+      }
+    ]
+ }
