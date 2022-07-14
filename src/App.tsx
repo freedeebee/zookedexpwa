@@ -20,13 +20,6 @@ function App() {
           <Route path='' element={<Homepage />} />
           <Route path='map' element={<MapPage />} />
           <Route path='profile' element={<Profile />} />
-        </Route>
-        <Route path='login' element={<LoginPage />} />
-        <Route path='/' element={<ContentContainer />}>
-          <Route path='detail/:id' element={<DetailPage />} />
-          <Route path='' element={<Homepage />} />
-          <Route path='map' element={<MapPage />} />
-          <Route path='profile' element={<Profile />} />
           <Route path='shop' element={<ShopPage />} />
         </Route>
         <Route path='login' element={<LoginPage />} />
