@@ -46,8 +46,9 @@ export default ListView;
 const Container = styled.div`
   position: absolute;
   top: -10px;
-  padding: 20px 16px 20px 16px;
+  padding: 4vh 16px 20px 16px;
   height: 88vh;
+  width: 100vw;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 8px;
