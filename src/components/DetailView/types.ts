@@ -6,7 +6,7 @@ export type ImageBannerProps = {
 export type AnimalHeaderProps = {
     animalName:string | undefined;
     location:string | undefined;
-    date:Date | undefined;
+    date:string;
 }
 
 export type AnimalInformationProps = {

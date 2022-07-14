@@ -15,7 +15,7 @@ export default InformationContent
 const Scroller= styled.div`
 overflow-y: scroll;
 height: calc(100% - 300px);
-padding: 16px 16px 64px 16px;
+padding: 8px 20px 64px 20px;
 ::-webkit-scrollbar {
   width: 8px;
 }
