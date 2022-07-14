@@ -5,9 +5,6 @@ import styled from "styled-components";
 import { AnimalHeaderProps } from "./types";
 
 const InformationHeader = (props: AnimalHeaderProps) => {
-  console.log(props.date);
-  console.log(props.location);
-
   return (
     <Container>
       <Name>

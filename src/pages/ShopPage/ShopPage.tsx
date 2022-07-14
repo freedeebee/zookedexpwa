@@ -18,23 +18,33 @@ const ShopPage = () => {
 
   return (
     <Container>
-      {cardData.map((item: ShopCardProps) => (
-        <ShopCard
-          key={`shopItem-${item.id}`}
-          id={item.id}
-          name={item.name}
-          price={item.price}
-          imageSrc={item.imageSrc}
-          previewText={item.previewText}
-        />
-      ))}
+      <h1>Shop</h1>
+
+      <ItemContainer>
+        {cardData.map((item: ShopCardProps) => (
+          <ShopCard
+            key={`shopItem-${item.id}`}
+            id={item.id}
+            name={item.name}
+            price={item.price}
+            imageSrc={item.imageSrc}
+            previewText={item.previewText}
+          />
+        ))}
+      </ItemContainer>
     </Container>
   );
 };
 
 export default ShopPage;
-
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+`;
+
+const ItemContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

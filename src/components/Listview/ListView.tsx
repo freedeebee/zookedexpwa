@@ -26,16 +26,15 @@ function ListView() {
   return (
     <Container>
       {cardData.map((item: AnimalCardProps) => (
-        <AnimalCard key={item.id}>
-          <Card
-            id={item.id}
-            name={item.name}
-            date={new Date(item.date)}
-            src={item.src}
-            location={item.location}
-            views={item.views}
-          />
-        </AnimalCard>
+        <Card
+          key={item.id}
+          id={item.id}
+          name={item.name}
+          date={new Date(item.date)}
+          src={item.src}
+          location={item.location}
+          views={item.views}
+        />
       ))}
     </Container>
   );
@@ -44,11 +43,6 @@ function ListView() {
 export default ListView;
 
 const Container = styled.div`
-  position: absolute;
-  top: -10px;
-  padding: 4vh 16px 20px 16px;
-  height: 88vh;
-  width: 100vw;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 8px;
