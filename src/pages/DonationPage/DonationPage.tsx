@@ -11,13 +11,18 @@ const DonationPage = () => {
   return (
     <Container>
       <BackButton />
-      <img src='https://picsum.photos/id/1025/300/200'></img>
+      <AnimalImage src='https://picsum.photos/id/1025/300/200'></AnimalImage>
       <DonationForm />
     </Container>
   );
 };
 
 export default DonationPage;
+
+export const AnimalImage = styled.img`
+  object-fit: cover;
+  width: 100%;
+`;
 
 const Container = styled.div`
   display: flex;
