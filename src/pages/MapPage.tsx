@@ -1,15 +1,24 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
 import "leaflet/dist/leaflet.css";
-import { useEffect } from "react";
+import {useEffect, useState} from "react";
 import icon from "../assets/images/zookedex.svg"
+import axios from "axios";
 
 function MapPage() {
 
     const mapPosition: [number, number] = [50.110924, 8.682127];
     const zoom = 10
-    const markerPosition: [number, number][] = [
-        [50.1158148, 8.6348734]
-    ];
+    const [markerPosition, setMarkerPosition] = useState<[number, number]>([9999,9999]);
+    const [animalName, setAnimalName] = useState<String>("");
+
+    useEffect(() => {
+        axios.get("/collection").then((res) => {
+            setAnimalName(res.data["1"].name);
+            setMarkerPosition([res.data[1].gallery[0].latitude, res.data[1].gallery[0].longitude]);
+        }).catch(err => {
+            console.log(err);
+        })
+    }, [])
 
     useEffect(() => {
         const L = require("leaflet");
@@ -26,21 +35,28 @@ function MapPage() {
     
 
     return (
-        <MapContainer center={mapPosition} zoom={zoom} scrollWheelZoom={false} style={{ height:`calc(100vh - 100px)`}}>
+        <MapContainer center={mapPosition} zoom={zoom} scrollWheelZoom={true} style={{ height:`calc(100vh - 100px)`}}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            {markerPosition.map(p => {
-                return(
-                    <Marker key={p[1]} position={p}>
-                        <Popup>
-                            Lion
-                        </Popup>
-                    </Marker>
-                )
-            })}
+            <Marker position={markerPosition}>
+                <Popup>
+                    {animalName}
+                </Popup>
+            </Marker>
+            <Marker position={[50.115055, 8.703104]}>
+                <Popup>
+                    Giraffe
+                </Popup>
+            </Marker>
+            <Marker position={[51.769189, 19.408933]}>
+                <Popup>           
+                    Elephant
+                </Popup>
+            </Marker>
+
         </MapContainer>
     )
 }
