@@ -1,24 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
-import { GlobalStyle } from './assets/styles/globalStyles';
-import { ThemeProvider } from 'styled-components';
-import { LightTheme } from './assets/styles/LightTheme';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import reportWebVitals from "./reportWebVitals";
+import { GlobalStyle } from "./assets/styles/globalStyles";
+import { ThemeProvider } from "styled-components";
+import { LightTheme } from "./assets/styles/LightTheme";
+import { BrowserRouter } from "react-router-dom";
+import { store } from "./store/store";
+import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ThemeProvider theme={LightTheme}>
-        <GlobalStyle />
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <ThemeProvider theme={LightTheme}>
+          <GlobalStyle />
+          <App />
+        </ThemeProvider>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 

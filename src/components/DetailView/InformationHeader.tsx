@@ -1,61 +1,57 @@
-import React from 'react'
-import {GoLocation} from 'react-icons/go'
-import {BiTimeFive} from 'react-icons/bi'
-import styled from 'styled-components'
-import { AnimalHeaderProps } from './types'
-import { format } from 'date-fns'
+import React from "react";
+import { GoLocation } from "react-icons/go";
+import { BiTimeFive } from "react-icons/bi";
+import styled from "styled-components";
+import { AnimalHeaderProps } from "./types";
 
 const InformationHeader = (props: AnimalHeaderProps) => {
-
-  console.log(props.date)
-  console.log(props.location)
+  console.log(props.date);
+  console.log(props.location);
 
   return (
     <Container>
-        <Name>
-            <p>{props.animalName}</p>
-        </Name>
-        <IconData>
-          <Icon>
-            <GoLocation/>
-          </Icon>
-          <p>{props.location}</p>
-        </IconData>
-        <IconData>
-          <Icon>
-            <BiTimeFive/>
-          </Icon>
+      <Name>
+        <p>{props.animalName}</p>
+      </Name>
+      <IconData>
+        <Icon>
+          <GoLocation />
+        </Icon>
+        <p>{props.location}</p>
+      </IconData>
+      <IconData>
+        <Icon>
+          <BiTimeFive />
+        </Icon>
         <p>{props.date}</p>
-          
-          
-        </IconData>
+      </IconData>
     </Container>
-  )
-}
+  );
+};
 
-export default InformationHeader
+export default InformationHeader;
 
 const Container = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-around;
-background: ${({theme})=> theme.colors.secondary};
-color: ${({theme})=> theme.colors.black};
-`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.black};
+`;
 
 const Name = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 const IconData = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin: 1vh;
-`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1vh;
+`;
 const Icon = styled.div`
-  color: ${({theme})=> theme.colors.black};
+  color: ${({ theme }) => theme.colors.black};
   margin-right: 8px;
-`
+`;

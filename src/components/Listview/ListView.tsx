@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Card from "../Card/Card";
 import { AnimalCard } from "./styles";
 
-type AnimalCard = {
+type AnimalCardProps = {
   id: number;
   name: string;
   src: string;
@@ -25,7 +25,7 @@ function ListView() {
 
   return (
     <Container>
-      {cardData.map((item: AnimalCard) => (
+      {cardData.map((item: AnimalCardProps) => (
         <AnimalCard key={item.id}>
           <Card
             id={item.id}

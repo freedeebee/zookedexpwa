@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { BiDonateHeart } from "react-icons/bi";
 import styled from "styled-components";
 
