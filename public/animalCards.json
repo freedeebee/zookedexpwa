@@ -24,6 +24,14 @@
       "src": "https://picsum.photos/id/1074/400/200",
       "location": "Berlin",
       "views": "150"
+   },
+   {
+      "id": 4,
+      "name": "Lion", 
+      "date": "07/11/2022",
+      "src": "https://picsum.photos/id/1074/400/200",
+      "location": "Berlin",
+      "views": "150"
    }
    ]
 }

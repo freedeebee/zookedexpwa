@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const AnimalCard = styled.div`
-  width: 100%;
+  width: 90vw;
+  margin-bottom: 20px;
 `;
 
 export const ImageWrapper = styled.div`
