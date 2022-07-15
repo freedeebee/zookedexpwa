@@ -6,9 +6,13 @@ import { AiFillHome } from "react-icons/ai";
 import CameraButton from "../CameraButton/CameraButton";
 import { Spacer } from "../Containers/Spacer";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 function BottomNavigation() {
   const [activeNav, setActiveNav] = useState("Home");
+
+  const location = useLocation();
+  console.log(location);
 
   useEffect(() => {}, [activeNav]);
   return (
@@ -18,14 +22,14 @@ function BottomNavigation() {
         label="Home"
         icon={<AiFillHome />}
         link="/"
-        active={activeNav === "Home" ? true : false}
+        active={location.pathname === "/" ? true : false}
         onClick={() => setActiveNav("Home")}
       />
       <BottomNavigationItem
         label="Map"
         icon={<FaMapMarkedAlt />}
         link="/map"
-        active={activeNav === "Map" ? true : false}
+        active={location.pathname === "/map" ? true : false}
         onClick={() => setActiveNav("Map")}
       />
       <Spacer />
@@ -33,14 +37,14 @@ function BottomNavigation() {
         label="Shop"
         icon={<FaShoppingCart />}
         link="/shop"
-        active={activeNav === "Shop" ? true : false}
+        active={location.pathname === "/shop" ? true : false}
         onClick={() => setActiveNav("Shop")}
       />
       <BottomNavigationItem
         label="Profile"
         icon={<MdPets />}
         link="/profile"
-        active={activeNav === "Profile" ? true : false}
+        active={location.pathname === "/profile" ? true : false}
         onClick={() => setActiveNav("Profile")}
       />
     </BottomNavWrapper>
