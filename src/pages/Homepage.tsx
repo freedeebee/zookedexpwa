@@ -8,7 +8,7 @@ type AnimalCardProps = {
   id: number;
   name: string;
   src: string;
-  date: Date;
+  date: string;
   location: string;
   views: number;
 };
@@ -28,6 +28,7 @@ function Homepage() {
         const test = Object.entries(res.data);
         let final: any = [];
         test.forEach((item) => final.push(item));
+        console.log(final);
         setCardData(final);
       })
       .catch((err) => console.error(err));
@@ -45,9 +46,9 @@ function Homepage() {
           key={item[1].detailedInformation.id}
           id={item[1].detailedInformation.id}
           name={item[1].name}
-          date={new Date("01/01/1970")}
+          date={new Date(item[1].detailedInformation.updatedOn)}
           src={item[1].gallery[0].url}
-          location={"Frankfurt"}
+          location={item[1].location}
           views={100}
         />
       ))}

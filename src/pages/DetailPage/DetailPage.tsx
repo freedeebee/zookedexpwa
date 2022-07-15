@@ -1,4 +1,5 @@
 import axios from "axios";
+import { format } from "date-fns";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import InformationContent from "../../components/DetailView/InformationContent";
@@ -9,34 +10,40 @@ type AnimalCardDetails = {
   id: number;
   name: string;
   src: string;
-  date: string;
+  date: Date;
   location: string;
   views: number;
   text: string;
 };
 
 const DetailView = () => {
-  const [details, setDetails] = useState<AnimalCardDetails>();
+  const [details, setDetails] = useState<any>();
   const { id } = useParams();
 
   useEffect(() => {
     if (id)
       axios
-        .get("/animalDetails.json")
-        .then((res) => setDetails(res.data.animalcards[+id - 1]));
+        .get(`/collection/${id}`)
+        .then((res) => setDetails(Object.values(res.data)));
   }, [id]);
 
   return (
     <>
-      {details?.date && (
+      {details !== undefined && (
         <>
-          <MainImageSection imageSrc={details?.src} animalId={details?.id} />
-          <InformationHeader
-            animalName={details?.name}
-            location={details?.location}
-            date={details?.date}
+          <MainImageSection
+            imageSrc={details[0]?.gallery[0].url}
+            animalId={details[0]?.detailedInformation.id}
           />
-          <InformationContent text={details?.text} />
+          <InformationHeader
+            animalName={details[0]?.detailedInformation.name}
+            location={details[0]?.location}
+            date={format(
+              new Date(details[0]?.detailedInformation.updatedOn),
+              "dd.MM.yyyy"
+            ).toString()}
+          />
+          <InformationContent text={details[0]?.detailedInformation.slogan} />
         </>
       )}
     </>
