@@ -13,17 +13,14 @@ function MapPage() {
 
     useEffect(() => {
         axios.get("/collection").then((res) => {
-            //setAnimalName(res.data["4"].name);
-            //setMarkerPosition([res.data["4"].gallery[0].latitude, res.data["4"].gallery[0].longitude]);
-
             for (let i in res.data) {
                 setAnimaleName(animaleName => [...animaleName, res.data[i].name]);
                 for (let j in res.data[i].gallery) {
                     setMarkerPosition(markerPosition => [
                         ...markerPosition,
                         [
+                            res.data[i].gallery[j].latitude,
                             res.data[i].gallery[j].longitude,
-                            res.data[i].gallery[j].latitude
                         ]
                     ])
                 }
