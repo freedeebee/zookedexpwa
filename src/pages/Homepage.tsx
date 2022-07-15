@@ -14,12 +14,22 @@ type AnimalCardProps = {
 };
 
 function Homepage() {
-  const [cardData, setCardData] = useState([]);
+  const [cardData, setCardData] = useState<[]>([]);
 
   useEffect(() => {
+    const config = {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    };
     axios
-      .get("/animalCards.json")
-      .then((res) => setCardData(res.data.animalcards))
+      .get("/collection", config)
+      .then((res) => {
+        const test = Object.entries(res.data);
+        let final: any = [];
+        test.forEach((item) => final.push(item));
+        setCardData(final);
+      })
       .catch((err) => console.error(err));
   }, []);
 
@@ -30,15 +40,15 @@ function Homepage() {
         <h1>Zookedex</h1>
       </Header>
       <h3>Your recent findings</h3>
-      {cardData.map((item: AnimalCardProps) => (
+      {Object.values(cardData).map((item: any) => (
         <Card
-          key={item.id}
-          id={item.id}
-          name={item.name}
-          date={new Date(item.date)}
-          src={item.src}
-          location={item.location}
-          views={item.views}
+          key={item[1].detailedInformation.id}
+          id={item[1].detailedInformation.id}
+          name={item[1].name}
+          date={new Date("01/01/1970")}
+          src={item[1].gallery[0].url}
+          location={"Frankfurt"}
+          views={100}
         />
       ))}
     </Container>
