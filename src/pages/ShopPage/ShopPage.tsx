@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import ShopCard from "../../components/ShopCard/ShopCard";
 import { ShopCardProps } from "../../components/ShopCard/types";
-import { GiTwoCoins } from "react-icons/gi";
 
 const ShopPage = () => {
   const [cardData, setCardData] = useState([]);
@@ -49,11 +48,6 @@ const Container = styled.div`
 const HeaderWrapper = styled.h1`
   line-height: 100%;
   padding-bottom: 15px;
-`;
-
-const CoinIcon = styled(GiTwoCoins)`
-  width: 5em;
-  height: 5em;
 `;
 
 const ItemContainer = styled.div`
