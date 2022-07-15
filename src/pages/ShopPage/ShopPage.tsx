@@ -19,7 +19,6 @@ const ShopPage = () => {
   return (
     <Container>
       <HeaderWrapper>Shop</HeaderWrapper>
-
       <ItemContainer>
         {cardData.map((item: ShopCardProps) => (
           <ShopCard
@@ -42,10 +41,13 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   height: 90vh;
+  top: -10px;
+  padding: 4vh 16px 20px 16px;
 `;
 
 const HeaderWrapper = styled.h1`
   line-height: 100%;
+  padding-bottom: 15px;
 `;
 
 const ItemContainer = styled.div`

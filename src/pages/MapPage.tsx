@@ -48,12 +48,17 @@ function MapPage() {
             </Marker>
             <Marker position={[50.115055, 8.703104]}>
                 <Popup>
-                    Giraffe
-                </Popup>
+                    Chinese Alligator
+                </Popup>    
             </Marker>
             <Marker position={[51.769189, 19.408933]}>
                 <Popup>           
-                    Monkey
+                    Shark
+                </Popup>
+            </Marker>
+            <Marker position={[-23.482259, 22.328281]}>
+                <Popup>           
+                    Rhino
                 </Popup>
             </Marker>
 
