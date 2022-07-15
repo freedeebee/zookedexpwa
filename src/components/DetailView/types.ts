@@ -1,3 +1,5 @@
+import { DetailInfo } from "../../pages/DetailPage/DetailPage";
+
 export type ImageBannerProps = {
     imageSrc: string | undefined;
     animalId:number | undefined;
@@ -10,5 +12,5 @@ export type AnimalHeaderProps = {
 }
 
 export type AnimalInformationProps = {
-    text:string | undefined;
+    details: DetailInfo | undefined;
 }
