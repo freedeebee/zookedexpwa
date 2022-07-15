@@ -45,7 +45,6 @@ const Container = styled.div`
 `;
 
 const HeaderWrapper = styled.h1`
-  font-family: ;
   line-height: 100%;
 `;
 
