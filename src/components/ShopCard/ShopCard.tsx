@@ -26,9 +26,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  column-gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  margin-right: 20px;
   background-color: ${({ theme }) => theme.colors.lightGrey};
   border-radius: 10px;
   &:active {
