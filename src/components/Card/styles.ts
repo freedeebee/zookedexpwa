@@ -9,7 +9,7 @@ export const ImageWrapper = styled.div`
   position: relative;
   display: flex;
   width: 100%;
-
+  height: 20vh;
   &:before {
     background: rgba(0, 255, 255, 0.5);
   }
