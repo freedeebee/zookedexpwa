@@ -16,15 +16,43 @@ type AnimalCardDetails = {
   text: string;
 };
 
+export type DetailInfo = {
+  classification: string;
+  commonName: string;
+  diet: string;
+  family: string;
+  genus: string;
+  height: string;
+  id: number;
+  kingdom: string;
+  locations: string;
+  name: string;
+  order: string;
+  phylum: string;
+  populationSize: string;
+  scientificName: string;
+  slogan: string;
+  updatedOn: string;
+  weight: string;
+}
+
 const DetailView = () => {
-  const [details, setDetails] = useState<any>();
+  const [details, setDetails] = useState<DetailInfo>();
+  const [imageSrc, setImageSrc] = useState();
+  const [location, setLocation] = useState();
   const { id } = useParams();
 
   useEffect(() => {
     if (id)
       axios
         .get(`/collection/${id}`)
-        .then((res) => setDetails(Object.values(res.data)));
+        .then((res) => {
+          console.log(res.data)
+          setImageSrc(res.data[id].gallery[0].url)
+          setLocation(res.data[id].location)
+          // @ts-ignore
+          setDetails(res.data[id].detailedInformation)
+        });
   }, [id]);
 
   return (
@@ -32,18 +60,18 @@ const DetailView = () => {
       {details !== undefined && (
         <>
           <MainImageSection
-            imageSrc={details[0]?.gallery[0].url}
-            animalId={details[0]?.detailedInformation.id}
+            imageSrc={imageSrc}
+            animalId={details.id}
           />
           <InformationHeader
-            animalName={details[0]?.detailedInformation.name}
-            location={details[0]?.location}
+            animalName={details.name}
+            location={location}
             date={format(
-              new Date(details[0]?.detailedInformation.updatedOn),
+              new Date(details.updatedOn),
               "dd.MM.yyyy"
             ).toString()}
           />
-          <InformationContent text={details[0]?.detailedInformation.slogan} />
+          <InformationContent details={details} />
         </>
       )}
     </>
