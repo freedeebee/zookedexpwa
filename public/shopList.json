@@ -3,56 +3,56 @@
     [
        {
        "id": 1,
-       "name": "Food10", 
+       "name": "Food", 
        "price": "500",
        "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
-       "previewText": "Food 10€ Voucher in Orientarium ZOO Łódź"
+       "previewText": "10€ Voucher for meals and drinks"
     },
     {
         "id": 2,
-        "name": "Food50", 
+        "name": "Food", 
         "price": "1500",
         "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
-        "previewText": "Food 50€ Voucher in Orientarium ZOO Łódź"
+        "previewText": "50€ Voucher for meals and drinks"
      },
      {
         "id": 3,
-        "name": "Drinks10", 
+        "name": "Drinks", 
         "price": "750",
         "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
-        "previewText": "Drinks 10€ Voucher in Orientarium ZOO Łódź"
+        "previewText": "10€ Discount on the zoo ticket"
      },
      {
         "id": 4,
-        "name": "Drinks50", 
+        "name": "Drinks", 
         "price": "1000",
         "imageSrc": "https://orientarium.lodz.pl/_template/assets/img/global/logo-hor.svg",
-        "previewText": "Drinks 50€ Voucher in Orientarium ZOO Łódź"
+        "previewText": "50€ Discount on the zoo ticket"
      },
      {
          "id": 5,
-         "name": "WWF50", 
+         "name": "WWF", 
          "price": "2000",
          "imageSrc": "https://upload.wikimedia.org/wikipedia/de/thumb/0/06/WWF_Logo.svg/84px-WWF_Logo.svg.png",
-         "previewText": "50€ WMF Membership for a year"
+         "previewText": "50€ WMF membership, valid for a year"
       },
       {
          "id": 6,
-         "name": "WWF100", 
+         "name": "WWF", 
          "price": "3500",
          "imageSrc": "https://upload.wikimedia.org/wikipedia/de/thumb/0/06/WWF_Logo.svg/84px-WWF_Logo.svg.png",
-         "previewText": "100€ WMF Membership for a year"
+         "previewText": "100€ WMF membership, valid for a year"
       },
       {
         "id": 7,
-        "name": "AnimalDefenders50", 
+        "name": "Animal Defenders", 
         "price": "4000",
         "imageSrc": "https://defenders.org/themes/custom/particle/dist/assets/logo.png",
         "previewText": "50€ Donation to Animal Defenders"
      },
      {
          "id": 8,
-         "name": "AnimalDefenders100", 
+         "name": "AnimalDefenders", 
          "price": "4500",
          "imageSrc": "https://defenders.org/themes/custom/particle/dist/assets/logo.png",
          "previewText": "100€ Donation to Animal Defenders"

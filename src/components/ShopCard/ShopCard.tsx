@@ -11,7 +11,9 @@ const ShopCard = (props: ShopCardProps) => {
         <Image src={props.imageSrc} />
       </ImageWrapper>
 
-      <p>{props.previewText}</p>
+      <TextWrapper>
+        <p>{props.previewText}</p>
+      </TextWrapper>
     </Container>
   );
 };
@@ -20,17 +22,35 @@ export default ShopCard;
 
 const Container = styled.div`
   display: flex;
+  width: 270px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: ${({ theme }) => theme.colors.lightGrey};
+  border-radius: 10px 10px 0px 0;
+`;
+
+const TextWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.black};
+  height: 3em;
+  width: inherit;
+  border-radius: 0 0 10px 10px;
 `;
 
 const Image = styled.img`
-  height: 200px;
-  width: 200px;
+  border: 1px solid ${({ theme }) => theme.colors.secondary};
+  height: 140px;
+  width: inherit;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 10px 10px 0px 0;
 `;
 
 const Name = styled.div`
