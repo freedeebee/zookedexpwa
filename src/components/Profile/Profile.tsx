@@ -12,8 +12,12 @@ export default function Profile() {
     <>
       <ProfileImage src={"https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif"} />
       <ProfileName>Test User 123</ProfileName>
-      <ProfileDetails>Rank</ProfileDetails>
-      <ProfileDetails>EUR 100,00</ProfileDetails>
+      <div style={{ marginTop: "50px" }} />
+      <ProfileDetails>Current points:</ProfileDetails>
+      <ProfileDetails>5637</ProfileDetails>
+      <div style={{ marginTop: "50px" }} />
+      <ProfileDetails>Current donation status:</ProfileDetails>
+      <ProfileDetails>EUR 167,56</ProfileDetails>
       <WaveContainer></WaveContainer>
       <Wave xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
         <path

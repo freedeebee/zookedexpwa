@@ -27,13 +27,11 @@ export const WaveContainer = styled.div`
   position: absolute;
   z-index: -10;
 `;
-
-export const ProfileName = styled.h2`
+export const ProfileDetails = styled.h4`
   text-align: center;
-  margin-top: 50px;
 `;
 
-export const ProfileDetails = styled.h4`
+export const ProfileName = styled.h2`
   text-align: center;
   margin-top: 50px;
 `;
