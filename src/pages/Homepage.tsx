@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "../components/Card/Card";
 import icon from "../assets/images/512Zookedex.png";
+import LoadingSpinner from "../components/LoadingSpinner/LoadingSpinner";
 
 type AnimalCardProps = {
   id: number;
@@ -41,17 +42,23 @@ function Homepage() {
         <h1>Zookedex</h1>
       </Header>
       <h3>Your recent findings</h3>
-      {Object.values(cardData).map((item: any) => (
-        <Card
-          key={item[1].detailedInformation.id}
-          id={item[1].detailedInformation.id}
-          name={item[1].name}
-          date={new Date(item[1].detailedInformation.updatedOn)}
-          src={item[1].gallery[0].url}
-          location={item[1].location}
-          views={100}
-        />
-      ))}
+      {Object.values(cardData).length !== 0 ? (
+        <>
+          {Object.values(cardData).map((item: any) => (
+            <Card
+              key={item[1].detailedInformation.id}
+              id={item[1].detailedInformation.id}
+              name={item[1].name}
+              date={new Date(item[1].detailedInformation.updatedOn)}
+              src={item[1].gallery[0].url}
+              location={item[1].location}
+              views={Math.round(Math.random() * 100)}
+            />
+          ))}
+        </>
+      ) : (
+        <LoadingSpinner />
+      )}
     </Container>
   );
 }
