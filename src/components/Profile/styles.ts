@@ -17,7 +17,6 @@ export const ProfileName = styled.h2`
 
 export const ProfileDetails = styled.h4`
     text-align: center;
-    margin-top: 50px;
 `
 
 
