@@ -30,7 +30,12 @@ const Container = styled.div`
   margin-bottom: 20px;
   margin-right: 20px;
   background-color: ${({ theme }) => theme.colors.lightGrey};
-  border-radius: 10px 10px 0px 0;
+  border-radius: 10px;
+  &:active {
+    background-color: ${({ theme }) => theme.colors.primary};
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 `;
 
 const TextWrapper = styled.div`
