@@ -1,6 +1,6 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
 import "leaflet/dist/leaflet.css";
-import {useEffect, useState} from "react";
+import {Key, useEffect, useState} from "react";
 import icon from "../assets/images/zookedex.svg"
 import axios from "axios";
 
@@ -8,13 +8,24 @@ function MapPage() {
 
     const mapPosition: [number, number] = [50.110924, 8.682127];
     const zoom = 10
-    const [markerPosition, setMarkerPosition] = useState<[number, number]>([9999,9999]);
-    const [animalName, setAnimalName] = useState<String>("");
+    const [markerPosition, setMarkerPosition] = useState<[number, number][]>([]);
+    const [animaleName, setAnimaleName] = useState<String[]>([]);
 
     useEffect(() => {
         axios.get("/collection").then((res) => {
-            setAnimalName(res.data["2"].name);
-            setMarkerPosition([res.data["2"].gallery[0].latitude, res.data["2"].gallery[0].longitude]);
+            for (let i in res.data) {
+                setAnimaleName(animaleName => [...animaleName, res.data[i].name]);
+                for (let j in res.data[i].gallery) {
+                    setMarkerPosition(markerPosition => [
+                        ...markerPosition,
+                        [
+                            res.data[i].gallery[j].latitude,
+                            res.data[i].gallery[j].longitude,
+                        ]
+                    ])
+                }
+            }
+
         }).catch(err => {
             console.log(err);
         })
@@ -40,27 +51,18 @@ function MapPage() {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-
-            <Marker position={markerPosition}>
-                <Popup>
-                    {animalName}
-                </Popup>
-            </Marker>
-            <Marker position={[50.115055, 8.703104]}>
-                <Popup>
-                    Chinese Alligator
-                </Popup>    
-            </Marker>
-            <Marker position={[51.769189, 19.408933]}>
-                <Popup>           
-                    Shark
-                </Popup>
-            </Marker>
-            <Marker position={[-23.482259, 22.328281]}>
-                <Popup>           
-                    Rhino
-                </Popup>
-            </Marker>
+            <>
+            {markerPosition.map((pos, index) => {
+                console.log(animaleName[index]);
+                return(
+                    <Marker key={index as Key} position={pos}>
+                        <Popup>
+                            {animaleName[index]}
+                        </Popup>
+                    </Marker>
+                )
+            })}
+            </>
 
         </MapContainer>
     )
